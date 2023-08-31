@@ -1,0 +1,42 @@
+Algoritmo "semnome"
+
+Var
+   nome_aluno: vetor [1..100] de caractere
+   n2, n1, media_aluno: vetor [1..100] de real
+   i, alunos: inteiro
+   media_turma, result: real
+
+Inicio
+
+   escreval("Quantos alunos deseja cadastrar?")
+   leia(alunos)
+   limpatela
+
+   para i de 1 ate alunos faca
+      escreval("NOME DO", i,"° ALUNO:")
+      leia (nome_aluno[i])
+
+      escreval
+
+      escreval("PRIMEIRA NOTA:")
+      leia(n1[i])
+      escreval("SEGUNDA NOTA:")
+      leia(n2[i])
+      limpatela
+      media_aluno[i]<- (n1[i] + n2[i]) / 2
+      media_turma<- (media_turma+ media_aluno[i] / alunos
+     result<- media_turma / alunos
+      fimpara
+      
+      para i de 1 ate alunos faca
+      escreval("Nome do ",i,"° aluno: ",nome_aluno[i])
+      escreval("primeira nota: ", n1[i])
+      escreval("segunda nota: ", n2[i])
+      escreval("media do ",i ,"° aluno: ", media_aluno[i])
+      escreval
+      escreval
+      escreval
+      fimpara
+      escreval("A media da turma foi: ", media_turma)
+
+Fimalgoritmo
