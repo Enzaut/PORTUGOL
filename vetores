@@ -82,6 +82,36 @@ Inicio
       escreval("Volte sempre!")
 
    fimse
+Fimalgoritmo
+
+
+
+
+
+
+
+
+Algoritmo "semnome"
+
+Var
+   ben:vetor [1..100] de real
+   i: inteiro
+   sabor, opcao: caractere
+   total, t: real
+
+Inicio
+enquanto total <200 faca
+i<- 1
+escreval ("Insira o valor do adicional")
+leia(ben[i])
+total<- total + ben[i]
+t := t+1
+fimenquanto
+limpatela
+enquanto i <= t faca
+escreval (ben[i])
+i := i+1
+fimenquanto
 
 
 Fimalgoritmo
