@@ -1,0 +1,48 @@
+Algoritmo "semnome"
+Var
+opcao:caractere
+numero, contador:inteiro
+valor, total:real
+
+Inicio
+escreval("Deseja cadastrar um pedido? (S) (N)")
+leia(opcao)
+SE ((opcao="S") ou (opcao="s")) entao
+ENQUANTO opcao="S" faca
+
+escreval("----------------SORVETERIA----------------")
+escreval("bola de sorvete 10R$")
+escreval("se caso gastar mais de 100 reais ganha um brinde!!!")
+escreval("------------------------------------------")
+
+escreval
+escreval("qual o valor?")
+leia(valor)
+
+total<- total + valor
+escreval("Mais uma bola de sorvete? (S) (N)")
+leia(opcao)
+fimenquanto
+
+se (total>100) entao
+escreval("escolha seu brinde!!")
+escreval("1 - caneca")
+escreval("2 - pelucia")
+escreval("3 - copo")
+leia(brinde)
+escolha (brinde)
+caso 1
+escreval("parabens pela caneca!!")
+
+caso 2
+escreval("parabens pela pelucia!!")
+
+caso 3
+escreval("parabens pelo copo!!")
+fimescolha
+senao
+escreval("Que pena ;-; , volte sempre!")
+fimse
+fimse
+
+Fimalgoritmo
