@@ -40,3 +40,48 @@ Inicio
       escreval("A media da turma foi: ", media_turma)
 
 Fimalgoritmo
+
+
+
+
+
+
+
+
+Algoritmo "semnome"
+
+Var
+   produto: vetor [1..10] de caractere
+   valor: vetor [1..10] de real
+   i: inteiro
+   total: real
+   opcao:caractere
+
+Inicio
+   escreval("deseja cadastrar os produtos? (S) (N)")
+   leia(opcao)
+   limpatela
+   se ((opcao="S") ou (opcao="s")) entao
+      para i de 1 ate 2 faca
+         escreval("Cadastre o produto:")
+         leia (produto[i])
+         escreval("Preço produto:")
+         leia (valor[i])
+         limpatela
+      fimpara
+
+      para i de 1 ate 2 faca
+         escreval(produto[i])
+         escreval(valor[i])
+         se ((valor[i] > 200) ou (valor [i] < 0)) entao
+            escreval("ERRO")
+         fimse
+      fimpara
+
+   senao
+      escreval("Volte sempre!")
+
+   fimse
+
+
+Fimalgoritmo
