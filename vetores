@@ -1,4 +1,4 @@
-Algoritmo "semnome"
+Algoritmo "ESCOLA"
 
 Var
    nome_aluno: vetor [1..100] de caractere
@@ -24,20 +24,27 @@ Inicio
       leia(n2[i])
       limpatela
       media_aluno[i]<- (n1[i] + n2[i]) / 2
-      media_turma<- (media_turma+ media_aluno[i] / alunos
-     result<- media_turma / alunos
-      fimpara
-      
-      para i de 1 ate alunos faca
+      media_turma<- (media_turma+ media_aluno[i] / alunos)
+      result<- media_turma / alunos
+   fimpara
+
+   para i de 1 ate alunos faca
       escreval("Nome do ",i,"° aluno: ",nome_aluno[i])
       escreval("primeira nota: ", n1[i])
       escreval("segunda nota: ", n2[i])
       escreval("media do ",i ,"° aluno: ", media_aluno[i])
+      se (media_aluno[i]>= 7) entao
+         escreval("O ",i ,"° aluno foi: --APROVADO--")
+      senao
+         se (media_aluno[i]< 7) entao
+            escreval("O ",i ,"° aluno foi: --REPROVADO--")
+         senao
+         fimse
+      fimse
       escreval
       escreval
-      escreval
-      fimpara
-      escreval("A media da turma foi: ", media_turma)
+   fimpara
+   escreval("A media da turma foi: ", media_turma)
 
 Fimalgoritmo
 
