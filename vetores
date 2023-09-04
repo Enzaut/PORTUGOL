@@ -87,7 +87,6 @@ Inicio
 
    senao
       escreval("Volte sempre!")
-
    fimse
 Fimalgoritmo
 
@@ -120,5 +119,65 @@ escreval (ben[i])
 i := i+1
 fimenquanto
 
+Fimalgoritmo
+
+
+
+
+
+Algoritmo "semnome"
+
+Var
+   nome_funcionario, email_funcionario, cargo_funcionario :vetor [1..100] de caractere
+   mat_funcionario, tel_funcionario, cpf_funcionario, sal_funcionario, vt_funcionario, vf_funcionario: vetor [1..100] de real
+   i: inteiro
+   opcao: caractere
+
+Inicio
+
+   escreval("Deseja cadastrar funcionario? (S) (N)")
+   leia(opcao)
+   se (opcao="S") ou (opcao="s") entao
+      repita
+      para i de 1 ate  faca
+         escreva("NOME COMPLETO: ")
+         leia (nome_funcionario[i])
+         escreval
+         escreva("MATRICULA:  ")
+         leia(mat_funcionario[i])
+         escreval
+         escreva("TELEFONE: ")
+         leia(tel_funcionario[i])
+         escreval
+         escreva("E-MAIL: ")
+         leia(email_funcionario[i])
+         escreval
+         escreva("CPF: ")
+         leia(cpf_funcionario[i])
+         escreval
+         escreva("CARGO/SETOR: ")
+         leia(cargo_funcionario[i])
+         escreval
+         escreva("SALARIO: ")
+         leia(sal_funcionario[i])
+         escreval
+         escreva("VT: ")
+         leia(vt_funcionario[i])
+         escreval
+         escreva("VF: ")
+         leia(vf_funcionario[i])
+         escreval
+         limpatela
+      fimpara
+      escreval("Deseja cadastrar mais um funcionario?")
+      leia(reposta)
+       ate (reposta="n") ou (reposta="N")
+
+      para i de 1 ate alunos faca
+         escreval("Nome do ",i,"° funcionario: ",nome_funcionario[i])
+         escreval
+      fimpara
+   senao
+      escreval("OK!!")
 
 Fimalgoritmo
